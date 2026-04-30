@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable Sampling of Bayesian Neural Network | UAI 2026 Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">UAI 2026 Tutorial</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">UAI 2026 Tutorial</span>
+            <h1>Scalable Sampling of Bayesian Neural Networks</h1>
+            <p class="hero-subtitle">Recent methodological, theoretical, and software advances that make sampling feasible at practically relevant scales</p>
+            <div class="hero-details">
+                <div class="detail-item">
+                    <span class="detail-label">Date</span>
+                    <span class="detail-value">August 17, 2026</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Duration</span>
+                    <span class="detail-value">3 Hours</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Amsterdam, Netherlands</span>
+                </div>
+            </div>
+            <a href="#schedule" class="btn btn-primary">View Schedule</a>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About the Tutorial</h2>
+            <div class="about-card about-card-full">
+                <div class="about-icon">🎯</div>
+                <h3>Objective</h3>
+                <p>This tutorial provides a comprehensive overview of modern MCMC sampling approaches and recent advances making sampling-based posterior approximation feasible for modern neural network architectures. It will equip participants with the necessary theoretical and practical tools to turn their own architectures into Bayesian neural networks and to run scalable sampling routines to quantify uncertainty or investigate theoretical properties of their network.</p>
+            </div>
+            <div class="about-grid about-grid-two">
+                <div class="about-card">
+                    <div class="about-icon">👥</div>
+                    <h3>Requirements</h3>
+                    <p>Researchers and practitioners with basic deep learning knowledge. No prior background in Bayesian inference or sampling is required.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📚</div>
+                    <h3>What You'll Learn</h3>
+                    <p>From posterior geometry and Langevin dynamics to modern HMC variants, convergence diagnostics, and hands-on implementation using state-of-the-art sampling libraries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <h2 class="section-title">Schedule</h2>
+            <div class="schedule-timeline">
+                <div class="schedule-item">
+                    <div class="schedule-time">0:00 - 0:15</div>
+                    <div class="schedule-content">
+                        <h3>Motivation and Context</h3>
+                        <p>Why posterior samples matter for theory and uncertainty quantification & why approximate Bayesian inference is not enough.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">0:15 - 0:30</div>
+                    <div class="schedule-content">
+                        <h3>Posterior Geometry of BNNs</h3>
+                        <p>Non-identifiability, symmetries, and singular posteriors, and their consequences for inference and diagnostics.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">0:30 - 0:50</div>
+                    <div class="schedule-content">
+                        <h3>Sampling Methods for BNNs</h3>
+                        <p>Going from Langevin dynamics and HMC to modern variants enabling scalability.</p>
+                    </div>
+                </div>
+                <div class="schedule-item highlight">
+                    <div class="schedule-time">0:50 - 1:05</div>
+                    <div class="schedule-content">
+                        <h3>Hands-on I: Empirical Exploration of Theory</h3>
+                        <p>Interactive notebooks: running samplers on tractable examples to inspect convergence as well as exploring strategies for handling symmetries and multimodality.</p>
+                        <div class="btn-group">
+                            <a href="notebooks/handson_session1.ipynb" download class="download-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Download Notebook
+                            </a>
+                            <a href="https://colab.research.google.com/drive/14JVMeKXPT_HwUqNgcrlndfp_KdpSvTz7" target="_blank" class="download-btn">
+                                Open in Colab
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">1:05 - 1:35</div>
+                    <div class="schedule-content">
+                        <h3>Recent Advances in Methodology, Theory, and Software</h3>
+                        <p>Algorithmic innovations, convergence insights, and practical implementations.</p>
+                    </div>
+                </div>
+                <div class="schedule-item highlight">
+                    <div class="schedule-time">1:35 - 1:50</div>
+                    <div class="schedule-content">
+                        <h3>Hands-on II: Practical Sampling of Real-World BNNs</h3>
+                        <p>Interactive notebooks: running Bayesian deep ensembles on real-world data; analyzing predictive densities and their performance in practical settings.</p>
+                        <span class="download-btn disabled">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            Notebook Coming Soon
+                        </span>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">1:50 - 2:00</div>
+                    <div class="schedule-content">
+                        <h3>Conclusion and Outlook</h3>
+                        <p>When to use sampling, open problems and future directions.</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">2:00 - 2:30</div>
+                    <div class="schedule-content">
+                        <h3>Open Discussion</h3>
+                        <p>Room for questions and discussion between participants and presenters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="organizers" class="section organizers">
+        <div class="container">
+            <h2 class="section-title">Organizers</h2>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <img src="imgs/davidr3.jpg" alt="David Rügamer" class="organizer-avatar">
+                    <h3>Prof. Dr. David Rügamer</h3>
+                    <p class="organizer-affiliation">LMU Munich | MCML</p>
+                    <p class="organizer-bio">Professor at LMU Munich heading the Munich Uncertainty Quantification AI Lab. Research focuses on uncertainty quantification for deep learning, Bayesian approaches, and overparametrization. Teaches various courses iin the realm of deep learning (theory).</p>
+                    <div class="organizer-links">
+                        <a href="https://davidruegamer.github.io/" class="link-btn">Website</a>
+                        <a href="https://scholar.google.com/citations?user=_DYguksAAAAJ" class="link-btn">Scholar</a>
+                    </div>
+                </div>
+                <div class="organizer-card">
+                    <img src="imgs/ES_quadrat.jpg" alt="Emanuel Sommer" class="organizer-avatar">
+                    <h3>Emanuel Sommer</h3>
+                    <p class="organizer-affiliation">LMU Munich | MCML</p>
+                    <p class="organizer-bio">PhD student working on scalable sampling-based inference for Bayesian neural networks. Develops sampling methodology (e.g. microcanonical Langevin ensembles), theory, and end-to-end software for practical BNN inference.</p>
+                    <div class="organizer-links">
+                        <a href="https://emanuelsommer.github.io/my-yourney/" class="link-btn">Website</a>
+                        <a href="https://scholar.google.com/citations?user=qa2P1tYAAAAJ&hl=en" class="link-btn">Scholar</a>
+                    </div>
+                </div>
+                <div class="organizer-card">
+                    <img src="imgs/JK_quadrat.png" alt="Julius Kobialka" class="organizer-avatar">
+                    <h3>Julius Kobialka</h3>
+                    <p class="organizer-affiliation">LMU Munich | MCML</p>
+                    <p class="organizer-bio">PhD student working on scalable sampling-based inference and the theoretical foundations of Bayesian neural networks. Co-developer of end-to-end Bayesian deep learning software.</p>
+                    <div class="organizer-links">
+                        <a href="https://muniq.ai" class="link-btn">Website</a>
+                        <a href="https://scholar.google.com/citations?user=2qTJ3XYAAAAJ&hl=en" class="link-btn">Scholar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="organizer-note">
+                <p>All presenters regularly teach university-level courses including seminars on Theoretical Foundations of Deep Learning, Uncertainty Quantification, and Dynamical Systems in Deep Learning. They have given invited talks at venues including the Bayes Duality Workshop, Amortized ProbML Workshop at NeurIPS, and the Singular Learning Theory Seminar.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="resources" class="section resources">
+        <div class="container">
+            <h2 class="section-title">Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3>📄 Key Papers</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://arxiv.org/abs/2502.06335">Microcanonical Langevin Ensembles: Advancing the Sampling of Bayesian Neural Networks</a>
+                            <span class="resource-meta">Sommer et al., ICLR 2025</span>
+                        </li>
+                        <li>
+                            <a href="">On the Interplay of Priors and Overparametrization in Bayesian Neural Network Posteriors</a>
+                            <span class="resource-meta">Kobialka et al., AISTATS 2026</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2406.00104">Scalable Bayesian Learning with posteriors</a>
+                            <span class="resource-meta">Duffield et al., ICLR 2025</span>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2402.01484">Connecting the Dots: Is Mode-Connectedness the Key to Feasible Sample-Based Inference in BNNs?</a>
+                            <span class="resource-meta">Sommer et al., ICML 2024</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resource-category">
+                    <h3>💻 Code & Libraries</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="#">BNN Sampling Library</a>
+                            <span class="resource-meta">Coming Q1 2026</span>
+                        </li>
+                        <li>
+                            <a href="https://github.com/scikit-learn-contrib/bde">bde: Bayesian Deep Ensembles for scikit-learn</a>
+                            <span class="resource-meta">PyPI, scikit-learn-contrib</span>
+                        </li>
+                        <li>
+                            <a href="https://github.com/normal-computing/posteriors">posteriors</a>
+                            <span class="resource-meta">PyTorch</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="materials-download">
+                <h3>Tutorial Materials</h3>
+                <p>Slides, interactive notebooks, and additional resources will be made available after the tutorial.</p>
+                <a href="#" class="btn btn-secondary">Download Materials (Coming Soon)</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>UAI 2026 Tutorial</h3>
+                    <p>Scalable Sampling of Bayesian Neural Network Posteriors</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.auai.org/uai2026/">UAI 2026</a>
+                    <a href="#about">About</a>
+                    <a href="#schedule">Schedule</a>
+                    <a href="#resources">Resources</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MUNIQ.AI All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
