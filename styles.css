@@ -94,7 +94,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 160px 24px 100px;
-    background: url('imgs/downtown-seoul.jpg') center/cover no-repeat;
+    background: url('imgs/amsterdam-canal.jpg') center/cover no-repeat;
     text-align: center;
     position: relative;
 }
@@ -642,6 +642,10 @@ body {
 .footer-bottom p {
     color: var(--text-light);
     font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: var(--text-light);
 }
 
 /* Responsive Design */
